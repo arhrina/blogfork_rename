@@ -1,3 +1,9 @@
+# <a href="https://arhrina.github.io/">Arhrina's Blog</a>
+## <a href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">제이크 H2O 테마</a>
+## <a href="https://gmlwjd9405.github.io/">수정에 도움받은 블로그</a>
+### 공부내용, 감정, 취미 등의 정리
+
+<!--
 ## jekyll-theme-H2O
 
 基于Jekyll的博客主题模板，简洁轻量。
@@ -453,3 +459,5 @@ Any types of contribution are welcome. Thanks.
 ### License 许可证
 
 Jekyll-Theme-H2O is licensed under [MIT](https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/LICENSE).
+
+-->
