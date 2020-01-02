@@ -88,7 +88,6 @@ permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
-'
 avatar: '/assets/img/profile.png'
 
 # Search
