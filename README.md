@@ -1,5 +1,5 @@
 # <a href="https://arhrina.github.io/">Arhrina's Blog</a>
-## <a href="http://jekyllthemes.org/themes/jekyll-theme-h2o/">제이크 H2O 테마</a>
+## <a href="http://jekyllthemes.org/themes/jekyll-theme-h2o/"> H2O 테마</a>
 ## <a href="https://gmlwjd9405.github.io/">수정에 도움받은 블로그</a>
 ### 공부내용, 감정, 취미 등의 정리
 
