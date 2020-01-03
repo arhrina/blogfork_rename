@@ -9,7 +9,7 @@ cover: '../assets/img/cover/[001888].jpg'
 tags: 매개변수와전달인자
 ---
 
-<img src="../../../../arhrina.github.io/tree/master/assets/img/cover/[001888].jpg">
+<img src="../../../../arhrina.github.io/blob/master/assets/img/cover/%5B001888%5D.jpg">
 
 매개변수(Parameter)와 전달인자(Argument)
 
