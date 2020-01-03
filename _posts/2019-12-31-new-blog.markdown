@@ -8,7 +8,7 @@ categories: update
 tags: 마크다운, test
 ---
 
-<img src="../assets/img/cover/07.JPG">
+<img src="https://github.com/arhrina/arhrina.github.io/raw/master/assets/img/cover/07.JPG">
 
 첫 블로그 게시글이자, 지킬 테마 중 H2O의 테마를 빌려 게시글 작성
 
