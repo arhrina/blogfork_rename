@@ -2,7 +2,9 @@
 layout: post
 title: CRUD와 Spring MVC PATTERN
 date: 2020-1-1T22:00:04.000Z
+cover: 'https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/%5B000759%5D.jpg'
 categories: update
+tags: spring db
 ---
 
 <img src="https://github.com/arhrina/arhrina.github.io/blob/master/images/fulls/[000759].jpg?raw=true" class="fit image">
