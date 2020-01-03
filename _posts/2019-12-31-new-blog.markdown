@@ -5,7 +5,7 @@ date: 2019-12-31T23:17:08.000Z
 author: Arhrina
 cover: 'https://github.com/arhrina/arhrina.github.io/raw/master/assets/img/cover/07.JPG'
 categories: update
-tags: 마크다운, test
+tags: 마크다운 test
 ---
 
 <img src="https://github.com/arhrina/arhrina.github.io/raw/master/assets/img/cover/07.JPG">
