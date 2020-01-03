@@ -19,6 +19,8 @@ tags: 매개변수와전달인자
 예를 들어,
 
 ```c{
+#include <stdio.h>
+
 int sum(int a, int b){
 return a+b;
 }
