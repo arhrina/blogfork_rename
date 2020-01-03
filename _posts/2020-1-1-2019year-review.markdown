@@ -2,10 +2,12 @@
 layout: post
 title: 2019년 돌아보기
 date: 2020-1-1T01:24:08.000Z
-categories: diary
+cover: 'https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/08.JPG'
+categories: update
+tags: diary review
 ---
 
-<img src="https://github.com/arhrina/arhrina.github.io/blob/master/images/fulls/08.JPG?raw=true" class="fit image">
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/08.JPG">
 
 공무원이라는 목표를 가지고 그 길 위에 있으면 다른 길들은 눈에 들어오지도 않는다. 물론 그 길을 뚫고 나가는 사람은 고작 출원인원의 2%밖에 되지 않지만, 그것이 나일 것이라는 희망을 가지고. 반복되는 공부과정들을 보면 공부는 되는 것 같지만 막상 시험장에 가면 그동안의 시간을 비웃는 듯한 문제들이 쏟아져나온다. 시험장을 나오고나서 드는 허탈감.
 
