@@ -3,7 +3,7 @@ layout: post
 title: 테스트 겸 마크다운 언어 공부사이트 링크
 date: 2019-12-31T23:17:08.000Z
 author: Arhrina
-cover: https://github.com/arhrina/arhrina.github.io/raw/master/assets/img/cover/07.JPG
+cover: 'https://github.com/arhrina/arhrina.github.io/raw/master/assets/img/cover/07.JPG'
 categories: update
 tags: 마크다운, test
 ---
