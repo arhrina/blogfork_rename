@@ -22,7 +22,6 @@ tags: 매개변수와전달인자
 int sum(int a, int b){
 return a+b;
 }
-}
 ```
 라는 코드가 있을 때, a와 b는 실제 값을 가지진 않는다. 하지만 sum이라는 함수를 호출할 때 2개의 int형 값을 넣어주어야 한다는 '형'을 가지고 있다. Java에서 class와 instance의 관계처럼, 하나의 틀(혹은 templete)을 만들어주는 것이 매개변수이다
 
@@ -35,14 +34,12 @@ return a+b;
 public void sum(int a, int b){
 system.out.printf("%d", a+b);
 }
-}
 ```
 이러한 메소드가 있을 때,
 
 ```java{
 public static void main(String args[]){
 sum(10, 25);
-}
 }
 ```
 
