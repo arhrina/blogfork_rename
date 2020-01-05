@@ -13,3 +13,5 @@ tags: 마크다운 test
 첫 블로그 게시글이자, 지킬 테마 중 H2O의 테마를 빌려 게시글 작성
 
 <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운언어 사용법 정리 링크</a>
+
+<a href="https://help.github.com/en/github/writing-on-github">Github-Flavored Markdown. 깃허브에서 쓰이는 커스텀된 마크다운</a>
