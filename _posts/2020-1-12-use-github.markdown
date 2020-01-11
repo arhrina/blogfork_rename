@@ -31,7 +31,7 @@ git remote add origin https://github.com/본인의깃허브닉네임/repository�
 * 다른 방법을 사용한다면 git remote는 할 필요가 없다
 
 git push -u origin master 명령어를 사용한다. master branch로 origin이라는 별명을 가진 repository에 업로드(push)하라는 명령어이다
-* 다른 방법은 remote를 하지 않고 git push --set-upstream github/repositoryURL master 명령어를 사용해 upload를 해당 repository로 고정하는 명령어이다
+* 다른 방법은 remote를 하지 않고 \git push --set-upstream github/repositoryURL master 명령어를 사용해 upload를 해당 repository로 고정하는 명령어이다
 * 다른 방법을 사용하면 remote도 하지 않으며 최초 설정 후에는 add와 commit 후에 git push만 입력하면 된다
 
 
