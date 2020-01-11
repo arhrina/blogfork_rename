@@ -40,7 +40,7 @@ spring framework에서 사용하려면 not null과 unique를 java에서 한번 �
 UPDATE [table] SET(column = 값) WHERE [조건];
 실 사용예 ) UPDATE tbl_book SET(b_name = 'better never to have been') WHERE b_author = 'David Benatar';
 ```
-이미 insert 되어있는 값에 특정 column들을 지정하여 해당하는 값들을 바꿔준다. 수정의 개념으로 사용되며, 조건을 반드시 붙일 것!!<br>
+이미 insert 되어있는 값에 특정 column들을 지정하여 해당하는 값들을 바꿔준다. 수정의 개념으로 사용된다<br><h3>조건을 반드시 붙일 것!!</h3><br>
 조건을 붙이지 않으면 해당 table에 들어가있는 모든 자료값들이 일괄적으로 변경된다
 백업본이 없는데 커밋을 해버리게 된다면 말 그대로 재앙이 되어버릴 수 있다. 은행에서 근무하는데 조건을 넣지 않는다면 특정 사람의 잔고를 1000원으로 만들려다가 모든 고객들의 잔고를 1000원으로 만들어버리게 된다면 뒷수습은...
 
