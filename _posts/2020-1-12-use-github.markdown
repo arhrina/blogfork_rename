@@ -41,5 +41,5 @@ pull 하지 않고 강제로 push를 하고 싶다면 git push -f라는 명령�
 여러 컴퓨터에서 하나의 repository에 접근하여 local과 repository의 형상이 어긋나게 되면 git pull 명령어를 해도 원하는만큼 파일을 받아오지 못할 때가 있는데, 이럴 때는 그냥 새로운 폴더를 만들고 git init 명령어 수행 후 git pull repositoryURL을 입력해 파일을 받아오고 config와(global이라면 패스) 추가되길 원하는 파일을 올리고 add, commit, push세팅을 순서대로 해주면 된다
 
 git 명령어에 대해 더 알고 싶다면 아래 링크를 참조
-<a href="https://terms.naver.com/entry.nhn?docId=4125964&cid=59321&categoryId=59321&expCategoryId=59321">네이버에 있는 깃 소개 및 명령어</a>
-<a href="https://git-scm.com/docs">영어로 된 github에 있는 모든 명령어와 사용법.</a> 모두 숙지하면 좋겠지만, 자주 사용하는 merge나 잘 사용하지 않는 추가 명령어들(push 뒤에 붙는 -f라든가)에 대한 레퍼런스가 필요하다면 여기로
+<br><a href="https://terms.naver.com/entry.nhn?docId=4125964&cid=59321&categoryId=59321&expCategoryId=59321">네이버에 있는 깃 소개 및 명령어</a><br>
+<a href="https://git-scm.com/docs">영어로 된 github에 있는 모든 명령어와 사용법.</a><br> 모두 숙지하면 좋겠지만, 자주 사용하는 merge나 잘 사용하지 않는 추가 명령어들(push 뒤에 붙는 -f라든가)에 대한 레퍼런스가 필요하다면 여기로
