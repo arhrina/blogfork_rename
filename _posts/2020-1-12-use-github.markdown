@@ -9,7 +9,7 @@ cover: '../assets/img/cover/IMG_2463.JPG'
 tags: DB
 ---
 
-<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_2463.JPG.JPG?raw=true">
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_2463.JPG?raw=true">
 
 <h3>github 기본 사용법</h3>
 
