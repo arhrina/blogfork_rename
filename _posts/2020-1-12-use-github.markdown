@@ -17,8 +17,8 @@ git으로 형상관리할 폴더에서 git bash를 실행시킨다
 
 해당 폴더에 .git 폴더가 없다면(숨김 폴더니 확인하려면 숨김을 볼 수 있게 설정해야한다) 최초 git init를 실행한다
 
-git config --local user.name 본인의깃허브닉네임
-git config --local user.email 본인의깃허브이메일
+git config \--local user.name 본인의깃허브닉네임
+git config \--local user.email 본인의깃허브이메일
 
 해당 폴더에서만 사용될 세팅이다. 해당 컴퓨터 전체에서 세팅하고 싶다면 local이 아니라 global로 세팅한다
 
