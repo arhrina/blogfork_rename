@@ -6,7 +6,7 @@ date: 2020-01-12T07:30:25.000Z
 author: Arhrina
 categories: update
 cover: '../assets/img/cover/IMG_2463.JPG'
-tags: DB
+tags: github
 ---
 
 <img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_2463.JPG?raw=true">
