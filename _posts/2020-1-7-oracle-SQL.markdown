@@ -23,7 +23,7 @@ SELECT * FROM [table];
 SELECT [COLUMN projection] FROM [table] WHERE [조건];
 실 사용예 ) SELECT u_id, u_password FROM tbl_user WHERE u_name LIKE '%민%' AND u_nick = '김';
 ```
-위의 예시는 u_name의 가운데에 민이라는 글자가 들어가며 u_nick이 김인 u_id, u_password 자료값을 조회한다
+위의 예시는 u_name의 가운데에 민이라는 글자가 들어가며(민이 첫글자거나 끝글자여도 조회된다) u_nick이 김인 u_id, u_password 자료값을 조회한다
 
 
 원하는 COLUMN만을 조회할 수도 있으며, oracle의 경우 as를 붙여서 임시로 다른 이름으로 보이게 조회할 수도 있다
