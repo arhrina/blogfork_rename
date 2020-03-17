@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Bye, friend.
 subtitle: 편안하길
@@ -15,4 +15,4 @@ tags: diary
 
 고통없는 세상에서 편히 쉬기를
 
-<!-- 진정 편하기를.. DesperateGirl. 1998. 2. 5 ~ 2020. 2. 27 -->
+<!-- 진정 평안하길...LHH. 1998. 2. 5 ~ 2020. 2. 27 -->
