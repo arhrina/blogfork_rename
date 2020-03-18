@@ -5,11 +5,11 @@ subtitle: 편안하길
 date: 2020-03-17T12:34:25.000Z
 author: Arhrina
 categories: update
-cover: '../assets/img/cover/IMG_7707.jpg'
+cover: '../assets/img/cover/IMG_7707.JPG'
 tags: diary
 ---
 
-<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_7707.jpg?raw=true">
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_7707.JPG?raw=true">
 
 겨울이 지나가면 나아질거란 너의 이야기는, 사실인것처럼 다가왔었지만 결국 봄이 되기 전에 꽃이 되어버렸네..
 
