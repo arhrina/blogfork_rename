@@ -1,0 +1,20 @@
+﻿---
+layout: post
+title: GET A JOG.
+subtitle: 취직
+date: 2020-03-16T20:56:25.000Z
+author: Arhrina
+categories: update
+cover: '../assets/img/cover/IMG_7707.JPG'
+tags: diary
+---
+
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/IMG_7707.JPG?raw=true">
+
+취업. 해야할 게 산더미다
+
+첫 월급을 받기 전날이지만, 취업날짜로 적어 업데이트 한다
+
+성남시 분당 판교에서
+
+<!-- animoby 서버 개발자 -->
