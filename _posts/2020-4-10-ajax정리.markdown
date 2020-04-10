@@ -1,12 +1,12 @@
 ---
 layout: post
 title: $.ajax 정리
-subtitle: diary
+subtitle: ajax, jquery, js
 date: 2020-04-10T11:33:25.000Z
 author: Arhrina
 categories: update
 
-tags: diary
+tags: ajax
 ---
 
 ## Asynchronous Javasciprt And Xml, AJAX
