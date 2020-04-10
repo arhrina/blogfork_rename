@@ -1,0 +1,154 @@
+---
+layout: post
+title: $.ajax 정리
+subtitle: diary
+date: 2020-04-10T11:33:25.000Z
+author: Arhrina
+categories: update
+
+tags: diary
+---
+
+## Asynchronous Javasciprt And Xml, AJAX
+
+비동기 자바스크립트와 XML의 약자이다
+
+<b>XMLHttpRequest 객체에 의해 동작한다</b>
+
+
+* ajax를 사용함으로서 얻을 수 있는 것을 정리하자면,
+
+1. 페이지가 로드된 후에도 웹서버로부터 데이터를 읽어올 수 있다
+2. 페이지를 다시 불러올 필요없이 페이지를 업데이트를 할 수 있다
+3. Scene, 화면의 뒤에서 데이터를 웹서버로 보낼 수 있다
+
+
+* ajax의 흐름
+
+1. 웹페이지가, 지정해둔 이벤트(특정한 attr의 클릭 등)가 발생
+2. XMLHttpRequest 객체가 자바스크립트에 의해 생성
+3. 생성된 XMLHttpRequest 객체가 웹서버로 Request를 보냄
+4. 웹서버가 Request를 처리(process)하고 웹페이지로 Response를 보냄
+5. 웹페이지의 js가 이를 읽어서 적절한 동작을 실행
+
+
+* 이러한 ajax의 핵심은 XMLHttpRequest 객체다
+
+* XMLHttpRequest에 관한 것은 별도로 포스팅 ~~언제하지~~
+
+
+
+## XMLHttpRequest object
+
+XMLHttpRequest는 화면의 뒤에서 동작할 수 있고 새로고침 없이 일부를 변경할 수 있다
+
+보안의 이유로 across domain들을 막고 있으므로 XML파일과 웹페이지가 같은 서버 내에서 동작해야 한다
+
+서버로 요청을 보내려면 XMLHttpRequest 객체의 open()과 send() 메서드를 사용한다
+
+open("GET/POST", url(URI), boolean으로 async 여부)
+GET에 데이터를 붙여보내려면 URI 뒤에 ?를 사용해 정보를 붙여서 서버로 보낼 수 있다
+
+send()는 GET만 동작한다
+send("string")을 사용하면 POST 동작을 하며 HTML form 내용이나 HTML header를 붙이려면 setRequestHeader()를 사용하고 send한다
+
+onReadyStateChange = function(){} 등으로 수신된 res를 실행하기 위한 함수를 정의하여 사용할 수 있다
+
+async는 false로 진행할 경우에는 동기화하여 동작하는데, 서버가 res를 보내줄 때까지 JS가 실행을 멈추므로 추천되는 사용법은 아니다
+
+
+### $.ajax
+
+$.ajax는 XMLHttpRequest 객체를 생성하지 않고 사용하기 편하게 해주는 jQuery의 API 중 하나이다
+사용법은 jquery 안에서
+
+$.ajax(){
+    url:value,
+    data:value,
+    type:GET/POST,
+    success:성공시 수행할 작업,
+    error:에러시 수행할 작업
+}
+
+등으로 하나씩 추가하여 사용할 수 있다
+
+
+
+ajax로 data를 보낼 때, form을 POST로 보내려면 form을 가져와서 serialize() 해주고 data에 실어보내면 된다
+serialize해서 보내게 되면 form 태그 안에 들어있는 여러 input 요소들을(hidden 포함) 모두 하나로 묶어 url로 보내주게 되고,
+스프링에서 받으면 적절한 VO나 변수명이 있으면 그에 맞게 자동으로 랜더링되서 자료를 받아준다
+
+
+* 명시적으로 RequestParam을 사용해서 이름을 적어두면, 컨트롤러에 있는 변수명과 달라도, 컨트롤러에 선언된 변수명에 값이 들어와서 사용할 수 있게 된다
+
+``` java
+
+
+
+.............어떤 컨트롤러
+
+@RequestMapping(value="/test/index", method="POST")
+@ResponseBody
+public String indexPage(@RequestParam("test1") String t1, @RequestParam("test2") String t2) {
+    System.out.println("전송된 테스트1값 : " + t1);
+    System.out.println("전송된 테스트2값 : " + t2);
+    return "";
+}
+.....................
+
+```
+어떠한 컨트롤러에서 ajax 전송 데이터를 받아서 콘솔에 값을 찍어보고 아무것도 없는 빈 화면을 브라우저에 보여주는 메서드
+
+
+``` html
+
+.......jquery get started문이 존재
+
+<script>
+
+$function(){ // jquery
+
+
+    $("#save_btn").click(function(){
+
+        var formData = $("form[id]=test").serialize(); // 크롬의 devtool에서 디버깅해서 찍어보면 formData: "test1=입력한값&test2=입력한값"
+
+        /*
+        var test1 = $("#te1").val();
+        var test2 = $("#te2").val();
+        
+        해서 ajax의 전송할 data에 json 데이터로,
+        ("test1": test1,
+         "test2":test2) 하여 각각의 text 값을 넘겨주는 방법도 존재한다
+        */
+
+        $.ajax(){
+            url: "/test/index",
+            data: formData,
+            success: function(data){
+                alert("연결성공");
+                return false;
+            }
+            error: function(result){
+                alert("오류발생");
+                return false;
+            }
+        }
+    })
+
+}
+</script>
+
+
+...............................HTML의 form tag 부분
+
+<form id = "test">
+    <input type="text" id="te1" name="test1"/>
+    <input type="text" id="te2" name="test2"/>
+    <button type="button" id="save_btn">
+</form>
+
+
+
+```
+
