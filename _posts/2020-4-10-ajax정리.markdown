@@ -124,6 +124,7 @@ $function(){ // jquery
 
         $.ajax(){
             url: "/test/index",
+            type: 'POST',
             data: formData,
             success: function(data){
                 alert("연결성공");
