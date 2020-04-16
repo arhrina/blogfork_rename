@@ -2,7 +2,7 @@
 layout: post
 title: Eclipse, Could not create the Java Virtual Machine
 subtitle: Error:A fatal exception has occurred
-date: 2020-04-13T20:20:25.000Z
+date: 2020-04-16T19:09:25.000Z
 author: Arhrina
 categories: update
 cover: '../assets/img/cover/buildpath_JavaVersion.png'
