@@ -19,7 +19,20 @@ Eclipse에서 server run을 하였는데 Could not create the Java Virtual Machi
 
 9로 설정된 상태에서 7을 run server 시키니까 에러가 발생하였다
 
-이클립스의 run setting이 프로젝트마다 관리되는 것이 아닌, 워크스페이스마다 관리되다보니, jdk 7로 설정된 프로젝트를 9로 돌리려다보니 발생하였다
+이클립스의 run setting이 프로젝트마다 관리되는 것이 아닌, ~~워크스페이스마다 관리되다보니~~, jdk 7로 설정된 프로젝트를 9로 돌리려다보니 발생하였다
+
+## 4월 17일 수정
+
+워크스페이스가 아니라 WAS Server마다 관리된다. Server를 생성시에 기본값이 workbench의 default Installed JRE로 되어있어 종속되는 것 같은 착각이 들었던 것이었다
+
+서버 생성시 Configure runtime environments에 들어가서
+<img src="../assets/img/cover/newServer.png">
+
+add(혹은 edit)에 들어가면 가장 밑에 JRE가 있다. 이를 고정시켜주면 된다
+
+<img src="../assets/img/cover/add,editServer.png">
+
+### 수정끝
 
 해결방법은 간단하다. prj 우클릭해서 build path-configure buildpath하여 JRE System library를 Edit,
 
