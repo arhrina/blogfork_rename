@@ -66,7 +66,7 @@ $.ajax(){
     url:value,
     data:value,
     type:GET/POST,
-    success:성공시 수행할 작업,
+    success:성공시 수행할 작업, // ajax는 단순히 비동기<b>통신</b>만을 하므로, 동작과는 무관하다. 동작을 꼭 지정해주어야한다
     error:에러시 수행할 작업
 }
 

@@ -2,7 +2,7 @@
 layout: post
 title: IoC와 IoC 컨테이너
 subtitle: spring
-date: 2020-04-16T19:09:25.000Z
+date: 2020-04-27T18:50:25.000Z
 author: Arhrina
 categories: update
 cover: '../assets/img/cover/'
@@ -31,3 +31,4 @@ tags: spring, design pattern
 <b>빈(Bean)</b> : 스프링이 제어권을 가지고 직접 생성
 <b>빈 팩토리(Bean factory)</b> : 
 <a href="https://js2prince.tistory.com/entry/Spring-IOC-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EB%9E%80"> 스프링 공부</a>
+작성중
