@@ -1,0 +1,32 @@
+---
+layout: post
+title: 예약어로 되어있는 칼럼명에 값 넣기
+subtitle: db
+date: 2020-05-04T17:36:25.000Z
+author: Arhrina
+categories: update
+cover: '../assets/img/cover/'
+tags: db
+---
+
+## DB상에 예약어(예약자)로 되어있는 칼럼에 값을 넣기
+
+일단, 이 상황이 되면 db 설계 미스...라고 봐도 될 듯 하다
+
+db의 칼럼명에 year, name 등의 예약어로 칼럼이 있으면, 칼럼을 참조하려고 할 때 year, name 등으로 참조하게 되면 오류가 발생한다
+
+```sql
+INSERT INTO tbl_test(name, year, time) -- 여기서 오류가 발생한다
+VALUES('길', '2020', '17:38:14');
+```
+
+이를 해결하는 가장 쉽고 올바른 방법은 칼럼명을 변경하는 것이지만...
+
+제약사항 때문에 이를 할 수 없거나(설계가 완료되어 이미 돌이킬 수 없다든가..유지보수 단계라면..) 하는 경우를 위해 이를 적어본다
+
+```sql
+INSERT INTO tbl_test([name], `year`, [time])
+VALUES('길', '2020', '17:40:18');
+```
+
+이와같이 칼럼명에 대괄호나 \`으로 칼럼명을 감싸주면 해결할 수 있다
