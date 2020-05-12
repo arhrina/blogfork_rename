@@ -26,9 +26,12 @@ tags: spring, design pattern
 
 ## 스프링의 IoC 컨테이너
 
-스프링은 컨테이너(외부)에서 제어를 하게 된다
+스프링은 컨테이너(외부)에서 제어를 하게 된다.
+
+스프링의 컨테이너에 대해 알려면 DI(Depedency Injection)도 알아야되는데, 이는 추후 포스팅..
 
 <b>빈(Bean)</b> : 스프링이 제어권을 가지고 직접 생성
 <b>빈 팩토리(Bean factory)</b> : 
 <a href="https://js2prince.tistory.com/entry/Spring-IOC-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EB%9E%80"> 스프링 공부</a>
-작성중
+
+작성중. 시간많을때 확실하게 포스팅해야하는 내용...정말로 확실하게 알아두면 spring framework이든 spring boot든 도움이 될 내용이다
