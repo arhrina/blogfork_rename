@@ -1,0 +1,56 @@
+---
+layout: post
+title: DOM
+subtitle: db
+date: 2020-05-12T09:06:25.000Z
+author: Arhrina
+categories: update
+cover: '../assets/img/cover/'
+tags: js, html, jquery
+---
+
+## Document Object Model
+
+구조화된 문서를 뜻한다
+
+HTML DOM은 다음 이미지와 같은 형식이다
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/1200px-DOM-model.svg.png">
+
+parent와 child를 갖는 트리구조이며, js의 getAttribute나 hasAttribute, jquery의 find 등으로 태그(혹은 id, name)를 찾아 지정하고
+
+삭제나 필요한 html을 추가하는 등의 원하는 동작을 js, jquery 등으로 할 수 있다
+
+```html
+<script>
+    var targetTr = document.getElementById("insertTr"); // insertTr id를 가진 tr 태그를 가져온다
+    var select = document.creatElement("select"); // <select> ~~~~~~~ </select>를 생성
+    $(targetTr).empty(); // jquery로 targetTr의 내용을 비워버린다. #insertTr selector를 이용해서 비워도 된다
+    var inHtml = "<th>교육내용</th>";
+    targetTr.appendChild(inHtml); // inHtml의 내용을 자식으로 붙인다. 그 결과물은 아래 주석모양. innerHTML을 사용하면 다른 결과가 있다
+    /*
+    <tr id="insertTr">
+        <th>교육내용</th>
+    </tr>
+    */
+    select.value = "초등교육"
+    select.innerText = "초등교육"
+    targetTr.appendChild(select); // insertTr에 생성된 select를 자식으로 붙인다
+    select.value = "중등교육"
+    select.innerText = "중등교육"
+    targetTr.appendChild(select);
+    select.value = "고등교육"
+    select.innerText = "고등교육"
+    targetTr.appendChild(select);
+
+
+</script>
+<table>
+    <tr id="insertTr"> <!-- 편의를 위해 예시를 하드코딩한다 -->
+        <th>교육대상</th>
+        <td>중학생</td>
+    </tr>
+</table>
+```
+
+작성중
