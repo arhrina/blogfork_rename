@@ -1,0 +1,48 @@
+---
+layout: post
+title: 크롬 팝업 및 리디렉션 관리자가 강제로 설정됨
+subtitle: chrome
+date: 2020-05-20T22:34:25.000Z
+author: Arhrina
+categories: update
+cover: '../assets/img/cover/popup3.jpg'
+tags: chrome
+---
+
+## Chrome 팝업 및 리디렉션, 관리자가 강제로 설정됨
+
+계속해서 보기싫은 팝업은 뜨는데, 팝업이 차단이 안된다
+
+이유는 모르겠고, 검색되서 들어갈 수 있는 거의 유일한 루트인 크롬 고객센터에 있는 답글은 전혀 도움이 안된다. 폴라리스 오피스는 깐적도 없는데...
+
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/popup3.jpg?raw=true">
+
+그리고 어쩐지 이딴게 떠있다. 이거 지금 치우려고 정보 검색중인데 찾기 힘드네....
+
+대충, 이유는 사용자가 크롬 설정과 별개로 어떤 값들을 고정적으로 허용해줘서 이게 레지스트리에 설정값으로 남아있는 듯 하다.
+
+<a href="chrome://policy">크롬 정책주소</a>를 입력하고 들어가보면
+
+아래 이미지와 같은게 뜰텐데 주목해야할 부분은 가장 위의 Chrome Policies에 있는 DefaultPopupsSetting이다
+
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/popup1.jpg?raw=true">
+
+이 값을 변경하려고 했더니 이 페이지에서는 <b>또!!!!</b> 변동이 안되네..?
+
+1. 시작버튼을 누른다
+2. regedit을 입력한다
+3. 컴퓨터\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome 를 찾아 들어간다
+4. 흉악하게 있는 DefaultPopupsSetting이라는 파일의 값이 1로 되어있는 것을 0으로 바꾼다
+
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/popup2.jpg?raw=true">
+
+5. 크롬을 다 끄고 재시작한다
+
+이런 과정을 거쳐 크롬에 있는 팝업 강제 세팅은 풀 수 있었다
+
+<img src="https://github.com/arhrina/arhrina.github.io/blob/master/assets/img/cover/popup4.jpg?raw=true">
+
+다만, 조직에서 관리중인 것에 대해서는 알아보고 정보가 찾아지면 다시 포스팅해야겠다
+
+
+<h3>뜬금없이 뜨는 팝업창 때문에 스트레스 받아서 차단하려했는데 왜인지 강제로 설정되서 안풀려서 화났었는데 어떻게 해결은 했다</h3>
